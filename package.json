@@ -3,13 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service build --watch",
+    "start": "vue-cli-service serve",
+    "dev": "vue-cli-service build --watch",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
-    "vue": "^3.0.0-beta.1"
+    "qrcode": "^1.4.4",
+    "vue": "^3.0.0-beta.1",
+    "vue-qrcode": "^0.3.3"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.3.0",

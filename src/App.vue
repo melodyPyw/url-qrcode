@@ -1,26 +1,40 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <vue-qrcode v-if="url" :width="180" :height="180" :value="url" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref, onMounted } from 'vue'
+import VueQrcode from './components/qrCode'
 
 export default {
   components: {
-    HelloWorld
-  }
+    VueQrcode
+  },
+  setup() {
+    const url = ref('')
+    const changUrl = (value) => {
+      url.value = value
+    }
+    onMounted(() => {
+      window.chrome.tabs.getSelected(null, function (tab) {
+          changUrl(tab.url)
+      });
+    })
+    return {
+      url,
+      changUrl
+    }
+  },
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
 }
 </style>
