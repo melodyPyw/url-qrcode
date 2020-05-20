@@ -16,3 +16,11 @@ Chrome插件，可以将当前URL转换为二维码。使用vue3.0开发。
 > Enable the Developer mode  
 > Click on Load unpacked extension  
 > Select the folder extension  
+
+## 用crx文件安装
+
+> 拖动crx文件并将其放到chrome://extensions/页面
+
+## Install with crx file
+
+> Drag the crx file and drop it to chrome://extensions/ page
