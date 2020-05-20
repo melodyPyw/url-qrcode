@@ -6,7 +6,7 @@
 
 <script>
 import { ref, onMounted } from 'vue'
-import VueQrcode from './components/qrCode'
+import VueQrcode from 'vue3-qrcode'
 
 export default {
   components: {
