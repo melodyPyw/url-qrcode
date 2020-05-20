@@ -69,7 +69,7 @@ export default {
         }
     },
     setup(props) {
-        const dataUrl = ref(props.value);
+        const dataUrl = ref('');
         watchEffect(() => {
             const options = Object.assign(
                     props, 
@@ -80,7 +80,7 @@ export default {
                     }
                 )
                 QRCode.toDataURL(
-                    dataUrl.value,
+                    props.value,
                     options
                 ).then((newUrl) => {
                     dataUrl.value = newUrl

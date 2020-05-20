@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <vue-qrcode v-if="url" :width="180" :height="180" :value="url" />
+    <vue-qrcode v-if="url" :width="200" :height="200" :value="url" />
   </div>
 </template>
 
@@ -18,9 +18,11 @@ export default {
       url.value = value
     }
     onMounted(() => {
-      window.chrome.tabs.getSelected(null, function (tab) {
-          changUrl(tab.url)
-      });
+      if (window.chrome.tabs) {
+        window.chrome.tabs.getSelected(null, function (tab) {
+            changUrl(tab.url)
+        });
+      }
     })
     return {
       url,
