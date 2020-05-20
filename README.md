@@ -1,24 +1,18 @@
 # url-qrcode
 
-## Project setup
-```
-npm install
-```
+Chrome插件，可以将当前URL转换为二维码。使用vue3.0开发。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 使用源码安装
 
-### Compiles and minifies for production
-```
-npm run build
-```
+> 用源代码安装
+> 在Chrome打开页面chrome://extensions/页面
+> 开启开发人员模式
+> 点击加载已解压的扩展程序
+> 选择文件夹
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Install with source code
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+> Visit chrome://extensions/ in Chrome
+> Enable the Developer mode
+> Click on Load unpacked extension
+> Select the folder extension
