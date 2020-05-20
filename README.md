@@ -8,11 +8,11 @@ Chrome插件，可以将当前URL转换为二维码。使用vue3.0开发。
 > 在Chrome打开页面chrome://extensions/页面  
 > 开启开发人员模式  
 > 点击加载已解压的扩展程序  
-> 选择文件夹
+> 选择文件夹  
 
 ## Install with source code
 
-> Visit chrome://extensions/ in Chrome
-> Enable the Developer mode
-> Click on Load unpacked extension
-> Select the folder extension
+> Visit chrome://extensions/ in Chrome  
+> Enable the Developer mode  
+> Click on Load unpacked extension  
+> Select the folder extension  
